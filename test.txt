@@ -64,10 +64,17 @@ Git
    - git add .
 
 9. 버전관리 파일 커밋 
-   git commit -m "index.html 버전관리"  
+   git commit -m "index.html 버전관리"
+
+   [오류발생시 해결방법]
+   git config --global user.email "깃허브에 사용할 이메일 주소"
+   git config --global user.name "이름"
 
 10. 로그 확인
    git log 
+
+11. 브런치명 설정
+   git pull origin 브랜치명(main)
 
 13. 로컬 저장소에 github 저장소 주소 설정
    git remote add origin git@github.com:gomaci/test01.git   
@@ -82,3 +89,14 @@ Git
 14. 만든 커밋 github 푸시
      git push -u origin master
      git push origin master
+
+[이전에 연결된 깃허브를 사용]
+15. 다시 재선택
+    git add . 
+16. 커밋 대기 
+    git commit -m "메시지입력"
+17  브런치명 설정
+    git pull origin main  
+18  푸시 
+    git push -u origin main 또는
+    git push origin main
